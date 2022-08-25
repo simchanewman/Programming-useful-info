@@ -2,13 +2,7 @@
 
 #Read the user input
 
-git add .
-echo "Add a note for this commit: "
-read commit_note
-git commit -m "$commit_note"
-
-git_confirm()
-{
+git_confirm () {
     echo "Do you want to proceed to a push to Main? [Y, N]"
     read commit_confirmation
     if [[$commit_confirmation -eq "Y"]]
@@ -22,6 +16,11 @@ git_confirm()
     else
         echo "Only the letter 'Y' or 'N' are accepted as parameters"
         git_confirm
+    fi
 }
 
+git add .
+echo "Add a note for this commit: "
+read commit_note
+git commit -m "$commit_note"
 git_confirm
