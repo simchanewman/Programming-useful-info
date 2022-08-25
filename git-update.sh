@@ -6,7 +6,6 @@ git add .
 echo "Add a note for this commit: "
 read commit_note
 git commit -m "$commit_note"
-git_confirm()
 
 git_confirm()
 {
