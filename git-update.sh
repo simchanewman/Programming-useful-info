@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
 #Read the user input
+git add .
+echo "Add a note for this commit: "
+read commit_note
+git commit -m "$commit_note"
+git_confirm
 
 git_confirm () {
     echo "Do you want to proceed to a push to Main? [Y, N]"
@@ -18,9 +23,3 @@ git_confirm () {
         git_confirm
     fi
 }
-
-git add .
-echo "Add a note for this commit: "
-read commit_note
-git commit -m "$commit_note"
-git_confirm
