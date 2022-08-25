@@ -33,7 +33,7 @@ ls -lrt
 
 #### 1.1.3.1 Creating a new branch {create-branch}
 
-**If you would like to use an already exisiting branch please see [__Section 1.1.3.2__](#existing-branch)**
+**If you would like to use an already exisiting branch please see [__Section 1.1.3.2__] (#existing-branch)**
 
 Navigate to the repository you have cloned locally using the following command:
 
@@ -49,7 +49,7 @@ git switch c- your-branch-name
 
 #### 1.1.3.2 Switching to an existing branch {existing-branch}
 
-**If you would like to create a new branch please see [__Section 1.1.3.1__](#create-branch)**
+**If you would like to create a new branch please see [__Section 1.1.3.1__] (#create-branch)**
 
 ## 1.2 - Edit and changes to repositories (locally and remotely)
 
