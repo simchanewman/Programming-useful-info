@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 #Read the user input
+#Function to recurse through if input is incorrect
 git_confirm () {
     echo "Do you want to proceed to a push to Main? [Y, N]"
     read commit_confirmation
