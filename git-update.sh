@@ -5,8 +5,8 @@ count=0
 
 git_check() {
     # Run the git_confirm fucntion
-    if [[ $(count) -lt 3 ]]
-    then
+    if [[ $count -lt 3 ]] ; then
+        echo "Reached"
         git_confirm
     else
         exit
