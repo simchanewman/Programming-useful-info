@@ -3,6 +3,16 @@
 #Read the user input
 count=0
 
+git_check() {
+    # Run the git_confirm fucntion
+    if [[ $count -lt 3 ]]
+    then
+        git_confirm
+    else
+        exit
+    fi
+}
+
 # Function: Will recurse if the user enters input that isn't Y or N
 # If statement: Checks the input based of the users input and then procceeds accordingly
 git_confirm () {
@@ -34,10 +44,4 @@ read commit_note
 # Git commit command with the commit note
 git commit -m "$commit_note"
 
-# Run the git_confirm fucntion
-if [[ $(("$count" -lt "$3")) ]]
-then
-    git_confirm
-else
-    exit
-fi
+git_check
