@@ -6,9 +6,11 @@ count=0
 git_check() {
     # Run the git_confirm fucntion
     if [[ $count -lt 3 ]] ; then
-        echo "Reached"
+        #echo "Reached"
         git_confirm
     else
+        echo "Thre have been to many attempts with the wrong input"
+        echo "Exiting"
         exit
     fi
 }
@@ -28,7 +30,7 @@ git_confirm () {
         exit
     else
         echo "Only the letter 'Y' or 'N' are accepted as parameters"
-        echo $count
+        #echo $count
         count=$((count + 1))
         git_check
     fi
