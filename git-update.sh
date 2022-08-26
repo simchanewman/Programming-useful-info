@@ -5,7 +5,7 @@ count=0
 
 git_check() {
     # Run the git_confirm fucntion
-    if [[ $count -lt 3 ]]
+    if [[ $(count) -lt 3 ]]
     then
         git_confirm
     else
@@ -29,7 +29,7 @@ git_confirm () {
     else
         echo "Only the letter 'Y' or 'N' are accepted as parameters"
         echo $count
-        $count=$((count + 1))
+        count=$((count + 1))
         git_confirm
     fi
 }
