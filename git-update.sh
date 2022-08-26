@@ -3,10 +3,10 @@
 #Read the user input
 count=0
 
+# Function: 
+# If statement:
 git_check() {
-    # Run the git_confirm fucntion
     if [[ $count -lt 3 ]] ; then
-        #echo "Reached"
         git_confirm
     else
         echo "Thre have been to many attempts with the wrong input"
@@ -30,7 +30,6 @@ git_confirm () {
         exit
     else
         echo "Only the letter 'Y' or 'N' are accepted as parameters"
-        #echo $count
         count=$((count + 1))
         git_check
     fi
@@ -46,4 +45,5 @@ read commit_note
 # Git commit command with the commit note
 git commit -m "$commit_note"
 
+# Start the check and push process
 git_check
