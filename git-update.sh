@@ -18,9 +18,9 @@ git_confirm () {
         exit
     else
         echo "Only the letter 'Y' or 'N' are accepted as parameters"
-        git_confirm
         echo count
         count++
+        git_confirm
     fi
 }
 
