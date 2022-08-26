@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #Read the user input
-count=0
+declare count=0
 
 # Function: Will recurse if the user enters input that isn't Y or N
 # If statement: Checks the input based of the users input and then procceeds accordingly
