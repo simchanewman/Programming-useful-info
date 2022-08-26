@@ -34,7 +34,7 @@ read commit_note
 git commit -m "$commit_note"
 
 # Run the git_confirm fucntion
-if [[ count -ls 3 ]]
+if [[ count -lt 3 ]]
 then
     git_confirm
 else
