@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
 #Read the user input
-#Function to recurse through if input is incorrect
+count=0
+
+# Function: Will recurse if the user enters input that isn't Y or N
+# If statement: Checks the input based of the users input and then procceeds accordingly
 git_confirm () {
     echo "Do you want to proceed to a push to Main? [Y, N]"
     read commit_confirmation
@@ -16,11 +19,24 @@ git_confirm () {
     else
         echo "Only the letter 'Y' or 'N' are accepted as parameters"
         git_confirm
+        count++
     fi
 }
 
+# Git add command
 git add .
+
+#Requests input form user for the commit note
 echo "Add a note for this commit: "
 read commit_note
+
+# Git commit command with the commit note
 git commit -m "$commit_note"
-git_confirm
+
+# Run the git_confirm fucntion
+if [[ count -ls 3 ]]
+then
+    git_confirm
+else
+    exit
+fi
