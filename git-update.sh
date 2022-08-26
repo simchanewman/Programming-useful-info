@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #Read the user input
-declare count=0
+count=0
 
 # Function: Will recurse if the user enters input that isn't Y or N
 # If statement: Checks the input based of the users input and then procceeds accordingly
@@ -35,7 +35,7 @@ read commit_note
 git commit -m "$commit_note"
 
 # Run the git_confirm fucntion
-if [[ $((count -lt $3)) ]]
+if [[ $((count -lt 3)) ]]
 then
     git_confirm
 else
