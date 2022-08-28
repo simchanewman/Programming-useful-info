@@ -3,8 +3,8 @@
 #Read the user input
 count=0
 
-# Function: 
-# If statement:
+# Function: Will check if the user has tried less or more than three times to make a commit and push
+# If statement: Contains the logic for the check and then will proceed with the outcome accordingly
 git_check() {
     if [[ $count -lt 3 ]] ; then
         git_confirm
