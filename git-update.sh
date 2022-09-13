@@ -2,6 +2,7 @@
 
 #Read the user input
 count=0
+current_time= date +%T
 
 # Function: Will check if the user has tried less or more than three times to make a commit and push
 # If statement: Contains the logic for the check and then will proceed with the outcome accordingly
