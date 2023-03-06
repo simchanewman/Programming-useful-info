@@ -13,3 +13,17 @@
     >console.log(1);
     >```
 
+2. Comments are really important in any langauge. To comment out code or add to explain lines of code using comments, execute the following commands:
+
+    >**Single line comment**
+    >```
+    >//This is a single line comment
+    >```
+
+    >**Multiple line comments**
+    >```
+    >/*
+    >Multiple comment lines
+    >use the following syntax.
+    >*/
+    >```
