@@ -3,7 +3,7 @@
 ## Starter Tips #1
 In order to print to the console execute the following command:
 
-**For strings:-**
-```
+&nbsp;&nbsp;&nbsp;**For strings:-**
+&nbsp;&nbsp;&nbsp;&nbsp;```
 console.log('string')
 ```
