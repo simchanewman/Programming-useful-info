@@ -22,7 +22,7 @@
 
     >**Multiple line comments**
     > Using the following syntax for commenting out is useful when you need to comment out many lines fo code.
-    >
+    
     >Additonally, muliple comment lines can be utilised to explain code in a clean format.
     >```
     >/*
