@@ -53,6 +53,7 @@
     >```
 
     >**Remainder/Modulo:-**
+    >
     > The *%* operator returns the remainder of the right-hand number once it has been divided into the left-hand number evenly.
     >```
     >console.log(103 % 5); //this will output 3
